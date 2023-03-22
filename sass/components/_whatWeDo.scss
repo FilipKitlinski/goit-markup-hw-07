@@ -1,0 +1,25 @@
+.what_we_do {
+  padding-top: 0;
+
+&__photos {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+&__table {
+  position: relative;
+}
+&__descriptions {
+  background-color: $whatWeDoBgColor;
+  font-family: $robotoFontFamily;
+  font-weight: 700;
+  font-size: 14px;
+  color: $whiteColor;
+  position: absolute;
+  inset: 224px 0 4px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 22px;
+  z-index: 1;
+}}
