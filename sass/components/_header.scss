@@ -8,60 +8,64 @@ header {
   font-weight: 500;
   padding: 24px 0;
 
-&__nav,
-&__menu,
-&__contact {
-  display: flex;
-  align-items: center;
-}
-&__logo {
-  font-family: $ralewayFontFamily;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: $hoverColor;
+  &__nav,
+  &__menu,
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    font-family: $ralewayFontFamily;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $hoverColor;
 
-&--accent {
-  color: #000;
-}}
-&__menu {
-  margin-left: 93px;
-  column-gap: 46px;
+    &--accent {
+      color: #000;
+    }
+  }
+  &__menu {
+    margin-left: 93px;
+    column-gap: 46px;
 
-&--hover::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 58px;
-  height: 4px;
-  border-radius: 2px;
-  top: 76px;
-  background-color: $hoverColor;
-}
-&--link {
-  color: #212121;
-}
-&--link:hover
- {
-  color: $hoverColor;
-  transition-duration: 250ms;
-  transition-property: color;
-}}
-&__contact {
-  column-gap: 50px;
-  fill: $greyColor;
+    &--hover::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 58px;
+      height: 4px;
+      border-radius: 2px;
+      top: 76px;
+      background-color: $hoverColor;
+    }
+    &--link {
+      color: #212121;
+    }
+    &--link:hover {
+      color: $hoverColor;
+      transition-duration: 250ms;
+      transition-property: color;
+    }
+  }
+  &__contact {
+    column-gap: 50px;
+    fill: $greyColor;
 
-&--link {
-  color: $greyColor;
-  align-items: center;
-  display: flex;
-  column-gap: 10px;
+    &--link {
+      color: $greyColor;
+      align-items: center;
+      display: flex;
+      column-gap: 10px;
+
+      &:hover,
+      &:focus {
+        color: $hoverColor;
+        fill: $hoverColor;
+        transition-duration: 250ms;
+        transition-property: color, fill;
+      }
+    }
+  }
 }
-&:hover,
-&:focus {
-  color:$hoverColor;
-  fill: $hoverColor;
-  transition-duration: 250ms;
-  transition-property: color, fill;
-}}}

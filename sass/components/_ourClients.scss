@@ -1,22 +1,23 @@
-.our_clients {
+.our_clients_section {
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
   fill: $iconsFillColor;
 
-&__icons {
-  width: 170px;
-  height: 92px;
-  border: 1px solid $iconsFillColor;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__icons {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconsFillColor;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icons:hover {
+    cursor: pointer;
+    border-color: $hoverColor;
+    fill: $hoverColor;
+    transition-duration: 250ms;
+    transition-property: border-color, fill;
+  }
 }
-&__icons:hover {
-  cursor: pointer;
-  border-color: $hoverColor;
-  fill: $hoverColor;
-  transition-duration: 250ms;
-  transition-property: border-color, fill;
-}}

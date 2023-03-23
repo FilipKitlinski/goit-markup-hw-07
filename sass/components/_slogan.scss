@@ -11,22 +11,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
-&__text {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  margin-bottom: 30px;
+  &__text {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  &__button {
+    background-color: $hoverColor;
+    border-color: $hoverColor;
+    color: $whiteColor;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 42px;
+    font-weight: 700;
+  }
 }
-&__button {
-  background-color: $hoverColor;
-  border-color: $hoverColor;
-  color: $whiteColor;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  padding: 10px 42px;
-  font-weight: 700;
-}}
