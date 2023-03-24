@@ -21,32 +21,47 @@ footer {
   &__logo--accent {
     color: $whiteColor;
   }
-  &__adress {
-    font-style: normal;
-  }
-  &__adress,
-  &__adress--adress {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: $whiteColor;
-    margin-bottom: 9px;
-  }
-  &__adress--contact {
-    display: inline-block;
-    color: $footerContactColor;
-    line-height: 24px;
-    margin-bottom: 9px;
-  }
 
-  &__table--join-us {
+  &__heading {
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     color: $whiteColor;
     margin-bottom: 10px;
   }
-  &__table--icon-box {
+}
+.adress {
+  font-style: normal;
+
+  .adress,
+  &__city {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+    margin-bottom: 9px;
+  }
+  &__contact {
+    display: inline-block;
+    color: $footerContactColor;
+    line-height: 24px;
+    margin-bottom: 9px;
+
+    &:hover {
+      color: $hoverColor;
+      transition-duration: 250ms;
+      transition-property: color;
+    }
+  }
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  fill: $iconsFillColor;
+  column-gap: 10px;
+  padding-bottom: 30px;
+
+  &__box {
     background-color: $footerIconsBgColor;
     fill: $whiteColor;
     width: 44px;
@@ -55,51 +70,40 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  &__table--icons {
-    display: flex;
-    justify-content: center;
-    fill: $iconsFillColor;
-    column-gap: 10px;
-    padding-bottom: 30px;
-  }
-  &__table--icon-box:hover {
-    background-color: $hoverColor;
-    cursor: pointer;
-    fill: $whiteColor;
-    transition-duration: 250ms;
-    transition-property: background-color, fill;
-  }
-  &__form {
-    border: 1px solid $footerNewsletterBorderColor;
-    border-radius: 4px;
-    background-color: $footerNewsletterBgColor;
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    color: $almostWhiteColor;
-  }
-  &__button {
-    background-color: $hoverColor;
-    color: $whiteColor;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    font-weight: 700;
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
-  }
 
-  &__button--icon {
-    margin-left: 20px;
+    &:hover {
+      background-color: $hoverColor;
+      cursor: pointer;
+      fill: $whiteColor;
+      transition-duration: 250ms;
+      transition-property: background-color, fill;
+    }
   }
-  &__adress--contact:hover {
-    color: $hoverColor;
-    transition-duration: 250ms;
-    transition-property: color;
-  }
+}
+.newsletter__input {
+  border: 1px solid $footerNewsletterBorderColor;
+  border-radius: 4px;
+  background-color: $footerNewsletterBgColor;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: $almostWhiteColor;
+}
+.newsletter__button {
+  background-color: $hoverColor;
+  color: $whiteColor;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+.newsletter__icon {
+  margin-left: 20px;
 }

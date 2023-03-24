@@ -45,6 +45,14 @@
     display: flex;
     flex-direction: column;
   }
+}
+.backdrop_form {
+  margin-bottom: 10px;
+
+  &__label {
+    margin-bottom: 4px;
+  }
+
   &__input {
     border: solid 1px $inputBorderColor;
     border-radius: 4px;
@@ -56,12 +64,12 @@
       padding: 12px 16px;
     }
   }
-  &__icons {
+  &__icon {
     position: absolute;
     margin-top: 5.5%;
     margin-left: 3%;
   }
-  &__input:hover ~ &__icons {
+  &__input:hover ~ &__icon {
     fill: $hoverColor;
   }
   &__input:hover,
@@ -71,7 +79,7 @@
     outline: none;
   }
 
-  &__input:focus ~ &__icons {
+  &__input:focus ~ &__icon {
     fill: $hoverColor;
   }
 
@@ -91,13 +99,7 @@
     margin: 0 auto;
     margin-top: 20px;
   }
-  &__table {
-    margin-bottom: 10px;
 
-    &--label {
-      margin-bottom: 4px;
-    }
-  }
   &--inline * {
     display: inline;
   }

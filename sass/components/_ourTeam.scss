@@ -1,20 +1,21 @@
-.our_team_section {
+.our_team {
   background-color: $ourTeamBgColor;
 
-  &__photos {
+  &__table {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
   }
-  &__table {
-    border: 1px solid $almostWhiteColor;
-    background-color: $whiteColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    text-align: center;
-  }
-  &__names {
+}
+.card {
+  border: 1px solid $almostWhiteColor;
+  background-color: $whiteColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+
+  &__name {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -22,7 +23,7 @@
     padding-top: 30px;
     padding-bottom: 10px;
   }
-  &__positions {
+  &__position {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -30,14 +31,14 @@
     padding-bottom: 16px;
     color: $greyColor;
   }
-  &__icons {
+  &__icon {
     display: flex;
     justify-content: center;
     fill: $iconsFillColor;
     column-gap: 10px;
     padding-bottom: 30px;
 
-    &--box {
+    &--hover {
       width: 44px;
       height: 44px;
       border-radius: 50%;
@@ -45,7 +46,7 @@
       justify-content: center;
       align-items: center;
     }
-    &--box:hover {
+    &--hover:hover {
       background-color: $hoverColor;
       cursor: pointer;
       fill: $whiteColor;
