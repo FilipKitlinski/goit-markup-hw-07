@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+  }
 
   &__icon {
     width: 270px;

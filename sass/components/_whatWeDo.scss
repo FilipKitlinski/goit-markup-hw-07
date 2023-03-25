@@ -1,11 +1,8 @@
 .what_we_do_section {
-  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
 
-  &__table {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-  }
   &__photo {
     position: relative;
   }

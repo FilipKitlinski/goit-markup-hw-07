@@ -1,7 +1,6 @@
-footer {
-  background-color: $footerBgColor;
-}
 .footer {
+  background-color: $footerBgColor;
+
   padding: 60px 0;
 
   &__container {
@@ -17,6 +16,7 @@ footer {
     line-height: 31px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    text-decoration: none;
   }
   &__logo--accent {
     color: $whiteColor;
@@ -28,6 +28,8 @@ footer {
     font-size: 14px;
     color: $whiteColor;
     margin-bottom: 10px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
   }
 }
 .adress {
@@ -46,6 +48,7 @@ footer {
     color: $footerContactColor;
     line-height: 24px;
     margin-bottom: 9px;
+    text-decoration: none;
 
     &:hover {
       color: $hoverColor;

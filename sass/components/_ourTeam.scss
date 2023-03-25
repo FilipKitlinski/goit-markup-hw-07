@@ -1,12 +1,9 @@
 .our_team {
-  background-color: $ourTeamBgColor;
-
-  &__table {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
 }
+
 .card {
   border: 1px solid $almostWhiteColor;
   background-color: $whiteColor;
@@ -31,27 +28,26 @@
     padding-bottom: 16px;
     color: $greyColor;
   }
-  &__icon {
+  &__icons {
     display: flex;
     justify-content: center;
     fill: $iconsFillColor;
     column-gap: 10px;
     padding-bottom: 30px;
-
-    &--hover {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &--hover:hover {
-      background-color: $hoverColor;
-      cursor: pointer;
-      fill: $whiteColor;
-      transition-duration: 250ms;
-      transition-property: background-color, fill;
-    }
+  }
+  &__circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__circle:hover {
+    background-color: $hoverColor;
+    cursor: pointer;
+    fill: $whiteColor;
+    transition-duration: 250ms;
+    transition-property: background-color, fill;
   }
 }

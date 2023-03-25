@@ -5,46 +5,12 @@
 ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
 body {
   font-family: $robotoFontFamily;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.02em;
-}
-
-footer {
-  background-color: $footerBgColor;
-}
-h2 {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding-bottom: 50px;
-}
-h3 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.03em;
 }
 .container {
   max-width: 1200px;
@@ -53,4 +19,18 @@ p {
 }
 .section {
   padding: 94px 0;
+  &--zero-padding-top {
+    padding-top: 0;
+  }
+  &--grey-bg-color {
+    background-color: $ourTeamBgColor;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+  }
 }

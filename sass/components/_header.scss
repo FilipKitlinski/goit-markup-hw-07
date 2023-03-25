@@ -22,6 +22,7 @@ header {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $hoverColor;
+  text-decoration: none;
 
   &__accent {
     color: #000;
@@ -43,6 +44,7 @@ header {
   }
   &__link {
     color: #212121;
+    text-decoration: none;
   }
   &__link:hover {
     color: $hoverColor;
@@ -59,6 +61,7 @@ header {
     align-items: center;
     display: flex;
     column-gap: 10px;
+    text-decoration: none;
 
     &:hover,
     &:focus {
